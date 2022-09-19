@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Orion - company map</title>
+
+    <!-- open graph -->
+    <meta property="og:title" content="orion(portfolio)"/>   
+    <meta property="og:type" content="website"/>   
+    <meta property="og:url" content="http://sy0811.dothome.co.kr/orion/sub_companymap.html">   
+    <meta property="og:image" content="images/orion_thum.jpg">   
+    <meta property="og:description" content="orion site renewal companymap-page">   
+    
+    <!-- FAV icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sub.css">
+
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5585ed69b8d987a4dfa8d997144032e8"></script>
+    <script src="js/sub.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="index.html">orion logo</a></h1>
+            <div class="random_img">
+                <p>Orion 신제품을 소개합니다.</p>
+                <div>
+                    <img src="images/product_biscuit_01.jpg" alt="신제품 랜덤 이미지1">
+                    <img src="images/product_snack_01.jpg" alt="신제품 랜덤 이미지2">
+                    <img src="images/orion_character.png" alt="오리온 고래밥 캐릭터">
+                </div>
+            </div>
+            <div class="m-nav-btn sub-btn">
+                <i class="xi-bars m-open-btn"></i>
+                <i class="xi-close m-close-btn"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">오리온브랜드</a>
+                        <ul>
+                            <li><a href="sub_orionproduct.html#new">신제품</a></li>
+                            <li><a href="sub_orionproduct.html">파워 브랜드</a></li>
+                            <li><a href="sub_MarketO.html">마켓오</a></li>
+                            <li><a href="sub_DrYou.html">닥터유</a></li>
+                            <li><a href="sub_Yongamsoo.html">제주 용암수</a></li>
+                            <li><a href="sub_Chocopie.html">초코파이 하우스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">고객센터</a>
+                        <ul>
+                            <li><a href="sub_customer.html">의견 접수</a></li>
+                            <li><a href="sub_faq.html">자주 묻는 질문</a></li>
+                            <li class="comming-soon"><a href="">영업소 위치</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">회사소개</a>
+                        <ul>
+                            <li class="comming-soon"><a href="">오리온소개</a></li>
+                            <li class="comming-soon"><a href="">오리온 사업영역</a></li>
+                            <li class="comming-soon"><a href="">IR/PR정보</a></li>
+                            <li class="comming-soon"><a href="">채용 공고</a></li>
+                            <li><a href="sub_companymap.html">오시는 길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="sub-top company-map">
+        <div class="top-bg"></div>
+        <div class="container">
+            <h2>오리온 그룹, 오리온 제과</h2>
+            <p>여러분의 사랑이 저희 경쟁력의 출발점입니다.</p>
+            <div class="lnb">
+                <a href="#">오리온 소개</a>
+                <a href="#">오리온 사업영역</a>
+                <a href="#">IR/PR 정보</a>
+                <a href="#">채용 공고</a>
+                <a href="sub_companymap.html" class="active">오시는 길</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="map-contents tac container pd-bottom">
+        <div class="sub-title pd">
+            <h2 class="sub-tt-eng bl">
+                <span>Orion</span> <em>오시는 길</em>
+            </h2>
+            <p>오리온을 향하는 발걸음에도 항상 행복하시길 바랍니다. </p>
+        </div>
+        <div class="orion-map"></div>
+        <div class="map-addr pd">
+            <img src="images/icon_map.png" alt="map">
+            <h3><b>주소</b> : 04369 서울시 용산구 백범로 90다길 13(문배동 30-10)</h3>
+            <p>TEL : 02-710-6000 / FAX : 02-719-2582</p>
+        </div>
+
+        <hr/>
+        
+        <div class="transport">
+            <div class="subway">
+                <div class="tp-title">
+                    <span><img src="images/icon_subway.png" alt="지하철 아이콘"></span>
+                    <div>
+                        <h4>지하철로 오시는 방법</h4>
+                        <p>남영역, 삼각지역 하차</p>
+                    </div>
+                </div>
+                <div class="tp-info">
+                    <div>
+                        <span class="navy"></span>
+                        <p>1호선 남영역 하차 후 출구의 좌측방향 <i class="xi-angle-right"></i> 용산전자상가 방향으로 6, 7분 도보 <i class="xi-angle-right"></i> 용산전자상가로 넘어가는 고가도로아래 <i class="xi-angle-right"></i> 오리온 본사</p>
+                    </div>
+                    <div>
+                        <span class="skyblue"></span>
+                        <p>4호선 삼각지역 하차 후 용산초등학교 방향(4호선 6번출구, 8호선 8번출구) 좌회전 <i class="xi-angle-right"></i> 1호선 지하철을 가로지르는 고가다리 넘어 <i class="xi-angle-right"></i> 오리온 본사</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="bus">
+                    <div class="tp-title">
+                        <span><img src="images/icon_bus.png" alt="버스 아이콘"></span>
+                        <div>
+                            <h4>버스로 오시는 방법</h4>
+                            <p>용산구청 하차</p>
+                        </div>
+                    </div>
+                    <div class="tp-info">
+                        <p>용산구청 하차 <i class="xi-angle-right"></i> 삼각지 방면 용산등기소 옆 도보 이동 <i class="xi-angle-right"></i> 오리온 본사</p>
+                    </div>
+                </div>
+                <div class="car">
+                    <div class="tp-title">
+                        <span><img src="images/icon_car.png" alt="자가용 아이콘"></span>
+                        <div>
+                            <h4>자가용으로 오시는 방법</h4>
+                            <p>남영역 방향으로 진행</p>
+                        </div>
+                    </div>
+                    <div class="tp-info">
+                        <p>남영역방향 <i class="xi-angle-right"></i> 용산전자상가 방향으로 직진 or 원효로에서 전쟁기념관 방향으로 가다 용산등기소 옆 <i class="xi-angle-right"></i> 오리온 본사</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+       
+        <div class="factory">
+            <div class="tp-title">
+                <span><img src="images/icon_factory.png" alt="공장 아이콘"></span>
+                <div>
+                    <h4>오리온 공장</h4>
+                    <p>청주, 익산</p>
+                </div>
+            </div>
+            <div class="factory-map">
+                <div>
+                    <div class="factory-map1"></div>
+                    <p>
+                        <b>청주공장</b> 충북 청주시 흥덕구 봉명동 404<br/>
+                        tel) 043-279-6000 &nbsp;&nbsp; fax) 043-276-6548                        
+                    </p>
+                </div>
+                <div>
+                    <div class="factory-map2"></div>
+                    <p>
+                        <b>익산공장</b> 전북 익산시 신흥동 813-2<br/>
+                        tel) 063-830-6114 &nbsp;&nbsp; fax) 063-833-4654                      
+                    </p>
+                </div>
+                <div>
+                    <div class="factory-map3"></div>
+                    <p>
+                        <b>익산공장</b> 전북 익산시 영등동 273-1<br/>
+                        tel) 063-840-6300 &nbsp;&nbsp; fax) 063-858-2218                      
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <hr>
+
+    <footer class="container">
+        <a href="index.html"><img src="images/logo_eng_g.svg" alt="orion logo"></a>
+        <div class="footer-info">
+            <p><a href="">법적고지</a> &#124; <a href="">개인정보 취급방침</a> &#124; <a href="">이메일 주소 수집거부</a></p>
+            <address>
+                <p>
+                    서울시 용산구 백범로 90다길 13, 전화번호 02-710-6000, 상담실 080-023-5700(수신자 부담), 제품구입 문의 02-710-6083<br/>
+                </p>
+                <a href="mailto:orionmaster@orionworld.com">orionmaster@orionworld.com</a>
+                <p class="copyright">copyright orion corp. all right reserved.</p>
+            </address>
+        </div>
+        <div class="sns-bnr">
+            <a href="">face book</a>
+            <a href="">naver blog</a>
+            <a href="">youtube</a>
+            <a href="">twitter</a>
+            <a href="">instagram</a>
+        </div>
+    </footer><!-- footer -->
+
+    <div class="floating-banner">
+        <ul class="kakao-bnr">
+            <li><a href=""><img src="images/kakao_talk.png" alt="오리온 카카오톡 고객센터"></a></li>
+            <li><a href=""><img src="images/kakao_qr.png" alt="오리온 카카오톡 QR코드"></a></li>
+        </ul>
+        <span class="open-btn"><i class="xi-plus"></i></span>
+    </div>
+    <a href="" class="top-btn"><i class="xi-arrow-up"></i></a>
+
+    
+    <script>
+
+        //ORION MAP
+        var mapContainer = document.querySelector('.orion-map'), // 지도를 표시할 div 
+                mapOption = { 
+                    center: new kakao.maps.LatLng(37.53537347191743, 126.97031472218917), // 지도의 중심좌표
+                    level: 3 // 지도의 확대 레벨
+            };
+
+            var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+            var imageSrc = 'images/map_logo.png', // 마커이미지의 주소입니다    
+                imageSize = new kakao.maps.Size(168, 72), // 마커이미지의 크기입니다
+                imageOption = {offset: new kakao.maps.Point(83, 50)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+                
+            // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+            var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+                markerPosition = new kakao.maps.LatLng(37.53550959536481, 126.96932766921371); // 마커가 표시될 위치입니다
+
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({
+                position: markerPosition, 
+                image: markerImage // 마커이미지 설정 
+            });
+
+            // 마커가 지도 위에 표시되도록 설정합니다
+            marker.setMap(map);
+
+
+        
+        //공장 MAP
+        
+            //청주공장
+            var mapContainer = document.querySelector('.factory-map1'), // 지도를 표시할 div 
+                mapOption = { 
+                    center: new kakao.maps.LatLng(36.657740372049815, 127.4527181556188), // 지도의 중심좌표
+                    level: 4 // 지도의 확대 레벨
+                };
+
+            var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+            var iwContent = '<div style="padding:5px; width: 146px;">orion 청주공장</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+                iwPosition = new kakao.maps.LatLng(36.657740372049815, 127.4527181556188), //인포윈도우 표시 위치입니다
+                iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+
+            // 인포윈도우를 생성하고 지도에 표시합니다
+            var infowindow = new kakao.maps.InfoWindow({
+                map: map, // 인포윈도우가 표시될 지도
+                position : iwPosition, 
+                content : iwContent,
+                removable : iwRemoveable
+            });
+
+            //익산공장1
+            var mapContainer = document.querySelector('.factory-map2'), // 지도를 표시할 div 
+                mapOption = { 
+                    center: new kakao.maps.LatLng(35.940737820553636, 126.97439148259365), // 지도의 중심좌표
+                    level: 4 // 지도의 확대 레벨
+            };
+
+            var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+            var iwContent = '<div style="padding:5px; width: 146px;">orion 익산공장</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+                iwPosition = new kakao.maps.LatLng(35.940737820553636, 126.97439148259365), //인포윈도우 표시 위치입니다
+                iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+
+            // 인포윈도우를 생성하고 지도에 표시합니다
+            var infowindow = new kakao.maps.InfoWindow({
+                map: map, // 인포윈도우가 표시될 지도
+                position : iwPosition, 
+                content : iwContent,
+                removable : iwRemoveable
+            });
+
+            //익산공장2
+            var mapContainer = document.querySelector('.factory-map3'), // 지도를 표시할 div 
+                mapOption = { 
+                    center: new kakao.maps.LatLng(35.951783582614624, 126.97056545560496), // 지도의 중심좌표
+                    level: 4 // 지도의 확대 레벨
+            };
+
+            var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+            var iwContent = '<div style="padding:5px; width: 146px;">orion 익산공장</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+                iwPosition = new kakao.maps.LatLng(35.951783582614624, 126.97056545560496), //인포윈도우 표시 위치입니다
+                iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+
+            // 인포윈도우를 생성하고 지도에 표시합니다
+            var infowindow = new kakao.maps.InfoWindow({
+                map: map, // 인포윈도우가 표시될 지도
+                position : iwPosition, 
+                content : iwContent,
+                removable : iwRemoveable
+            });
+   
+   </script>
+    
+</body>
+</html>
